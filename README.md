@@ -1,5 +1,4 @@
-# Project Name
-
+# Liri Node Bot
 
 ## Installation
 
