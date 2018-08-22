@@ -15,9 +15,10 @@ folder. Run `npm install` to install package.json.
 
     `# Spotify API keys
      SPOTIFY_ID=[your id here]
-     SPOTIFY_SECRET=[your secret here]`
+     SPOTIFY_SECRET=[your secret here]
+     *Do not include quotations*
+     `
 
-*Do not include quotations*
 
 6. Thereafter you can type commands such as: `node liri.js spotify-this-song [song name]` to have the bot retreive information. See below for more commands.
 
@@ -53,7 +54,7 @@ Command List:
 
 
 ## Credits
-(https://developer.spotify.com/dashboard/login)[Spotify Dashboard]
-(http://www.artists.bandsintown.com/bandsintown-api)[Bands In Town API]
-(http://www.omdbapi.com/)[OMDB Api]
+[Spotify Dashboard](https://developer.spotify.com/dashboard/login)
+[Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
+[OMDB Api](http://www.omdbapi.com/)
 
