@@ -1,5 +1,6 @@
 spotifyRequest = require("./spotify")
 omdbRequest = require("./omdb")
+bands = require("./export-modules/bands");
 
 var fs = require("fs");
 
@@ -22,6 +23,10 @@ module.exports = {
                     break;
                 case "movie-this":
                     omdbRequest.omdb(request)
+                    break;
+                case "concert-this":
+                    artist = request.join("+")
+                    bands.bandRequest(artist)
                     break;
                 default:
                     return
