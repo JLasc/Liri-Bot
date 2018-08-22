@@ -13,8 +13,11 @@ folder. Run `npm install` to install package.json.
 
 5. This application requires an additional `.env` file for spotify. Please navigate to `spotify's developer dashboard` to generate your id and secret. This is required to access their database. Once you have this infomration, create a file in the `/var/code` directory and add the following lines:
 
-    ```# Spotify API keys
+    ```
+    # Spotify API keys
+
      SPOTIFY_ID=[your id here]
+
      SPOTIFY_SECRET=[your secret here]
      ```
 
@@ -54,6 +57,8 @@ Command List:
 
 ## Credits
 [Spotify Dashboard](https://developer.spotify.com/dashboard/login)
+
 [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
+
 [OMDB Api](http://www.omdbapi.com/)
 
