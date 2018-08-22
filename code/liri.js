@@ -9,29 +9,26 @@ var omdbRequest = require("./export-modules/omdb");
 var doWhat = require("./export-modules/do-what");
 var bands = require("./export-modules/bands");
 
-// Spotify Logic 
-if (arg1 === "spotify-this-song"){
-  spotifyRequest.getSong(userInput) 
-}
 
-//OMDB Request Logic 
-if (arg1 === "movie-this") { 
-  omdbRequest.omdb(userInput)
-}
-
-
-//Bands In Town Logic
-if (arg1 === "concert-this") {
+switch (arg1) {
+  case "spotify-this-song":
+  spotifyRequest.getSong(userInput);
+  break;
+  case "movie-this":
+  omdbRequest.omdb(userInput);
+  break;
+  case "concert-this":
   artist = userInput.join("+")
-  bands.bandRequest(artist)
-}
-
-
-//Do What It Says Logic
-if(arg1 === "do-what-it-says"){
+  bands.bandRequest(artist);
+  break;
+  case "do-what-it-says":
   doWhat.search()
-}
-
-if (arg1 === "help") {
-  console.log(``)
+  break;
+  case "help":
+  console.log(`\nPlease enter a command to get started:
+  - spotify-this-song [song name]
+  - movie-this [movie name]
+  - concert-this [artist name]
+  - do-what-it-says 
+  `)
 }
