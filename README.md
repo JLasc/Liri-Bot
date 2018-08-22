@@ -41,7 +41,7 @@ Command List:
     - Date of the event
 
 
-- `movie-this` This command will return your specified movie utilizing the OMDB API. This command will return the following:
+- `movie-this [movie name]` This command will return your specified movie utilizing the OMDB API. This command will return the following:
 
     - Title of the movie
     - Year
