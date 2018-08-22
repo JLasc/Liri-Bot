@@ -4,7 +4,6 @@ bands = require("./export-modules/bands");
 
 var fs = require("fs");
 
-
 module.exports = {
     search: function () {
         fs.readFile("random.txt", "utf8", function (err, data) {
